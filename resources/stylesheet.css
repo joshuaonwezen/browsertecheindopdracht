@@ -1,0 +1,11 @@
+#frame-left-1, #frame-right-1{
+    float:left;
+    width:350px;
+    height:350px;
+    margin:10px;
+    padding:10px;
+    border:1px solid #aaaaaa;
+}
+main{
+ 
+}
