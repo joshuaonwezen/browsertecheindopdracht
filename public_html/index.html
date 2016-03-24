@@ -6,16 +6,28 @@
     </head>
     <body>
         <main>
-            <section id="frame-left-1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <img src="resources/263.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="328" height="305">
-                <!-- <img src="resources/ham.png" draggable="true" ondragstart="drag(event)" id="drag1" width="328" height="305">
-                <img src="resources/kaas-jong-belegen.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="328" height="305">
-                <img src="resources/04_heinz-ketchup.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="328" height="305">-->
+            <section id="left"  class="left-frame frame" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>
+                    Productenlijst
+                </h2>
+                <img src="resources/kaas-jong-belegen.jpg" draggable="true" ondragstart="drag(event)" class="dragitem" id="cheese">
+                <img src="resources/263.jpg" draggable="true" ondragstart="drag(event)"  class="dragitem" id="bread" >
+                <img src="resources/ham.png" draggable="true" ondragstart="drag(event)" class="dragitem" id="ham">
+                <img src="resources/04_heinz-ketchup.jpg" draggable="true" ondragstart="drag(event)" class="dragitem" id="ketchup" >
 
             </section>
-            <section id="frame-right-1" ondrop="drop(event)" ondragover="allowDrop(event)">
-
+            <section>
+                <noscript>
+                    No javascript was found on your page. 
+                </noscript>
+                <p>Plaats de producten die u wilt kopen in de winkelwagen.</p>
             </section>
+            <section id="right"  class="right-frame frame" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>
+                    Winkelwagen
+                </h2>
+            </section>
+
 
 
         </main>
