@@ -8,9 +8,21 @@
     border:5px dashed #72bcd4;
     
     background-color: white;
+    pointer-events: all;
 }
-
-
+img{
+    pointer-events: all;
+}
+button{
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    box-sizing: none;
+    padding: 0;
+    border: none;
+}
 body{
     background-color:#ADD8E6;
     font-family: Arial;
