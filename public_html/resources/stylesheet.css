@@ -1,8 +1,7 @@
 .frame{
     float:left;
     width:350px;
-    min-height:800px;
-    height:100%;
+    height:auto;
     margin:10px;
     padding:50px;
     border:5px dashed #72bcd4;
@@ -50,7 +49,7 @@ p{
     margin-top:12%;
     text-align:center;
     font-size:150%;
-    font-weight:bold;
+    font-weight:bold; 
 }
 .left-frame{
     float:left;
@@ -58,4 +57,10 @@ p{
 }
 .right-frame{
     float:right;
+}
+
+@media all and (max-width: 800px){
+    main{
+        flex-direction:column;
+    }
 }
