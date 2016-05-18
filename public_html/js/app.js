@@ -44,39 +44,52 @@
 //    }
 //    
 //})();
+(function () {
+    document.getElementById('right').style = "";
+    document.getElementById('midsection').style = "";
+})();
 
 function allowDrop(ev) {
     ev.preventDefault();
 }
 
 function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-    var parent = document.getElementById(ev.target.id).parentNode;
-    
-    if (parent.id == 'right') {
-        parent.className = 'right-frame frame selected';
-        document.getElementById('left').className = 'left-frame frame target';
-    }
-    if (parent.id == 'left') {
-        parent.className = 'left-frame frame selected';
-        document.getElementById('right').className = 'right-frame frame target';
+    var something = false;
+    if ("files" in DataTransfer.prototype && something == true) {
+        ev.dataTransfer.setData("text", ev.target.id);
+        var parent = document.getElementById(ev.target.id).parentNode;
+
+        if (parent.id == 'right') {
+            parent.className = 'right-frame frame selected';
+            document.getElementById('left').className = 'left-frame frame target';
+        }
+        if (parent.id == 'left') {
+            parent.className = 'left-frame frame selected';
+            document.getElementById('right').className = 'right-frame frame target';
+        }
+    }else{
+        console.log(ev);
     }
 }
 
 function drop(ev) {
     ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-    
-    var parent = document.getElementById(ev.target.id);
+    if ("files" in DataTransfer.prototype) {
 
-    if(parent.id == 'right'){
-        parent.className = 'right frame frame';
-        document.getElementById('left').className = 'left-frame frame';
-    }
-    if(parent.id == 'left'){
-        parent.className = 'left-frame frame';
-        document.getElementById('right').className = 'right-frame frame';
+
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+
+        var parent = document.getElementById(ev.target.id);
+
+        if (parent.id == 'right') {
+            parent.className = 'right frame frame';
+            document.getElementById('left').className = 'left-frame frame';
+        }
+        if (parent.id == 'left') {
+            parent.className = 'left-frame frame';
+            document.getElementById('right').className = 'right-frame frame';
+        }
     }
 }
 
