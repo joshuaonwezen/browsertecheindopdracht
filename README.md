@@ -1,5 +1,10 @@
 # Eindopdracht
 
+http://onwezen.github.io/browsertecheindopdracht/public_html/
+
+(WebRTC old project)
+https://github.com/onwezen/Project-Digital-Learning/blob/master/PDL/src/main/webapp/virtualclassroom.jsp
+
 ##Bevindingen
 
 Aan het begin van de week ben ik begonnen met WebRTC uitzoeken, echter duurde het te lang om de hele node server en fallback voor de messages
@@ -15,6 +20,6 @@ niet beschikbaar in elke browser natuurlijk. Zo is hij niet beschikbaar in iOS s
 http://caniuse.com/#feat=dragndrop
 
 Een oplossing die ik hier zelf voor heb bedacht is het clicken van een element en deze vervolgens verplaatsen naar de juiste andere plek.
-Wanneer juist uitgevoerd kan dit dynamisch geïmplementeerd worden op dezelfde manier als het drag & droppen. Het enige wat hier wel vereist
+Wanneer juist uitgevoerd kan dit dynamisch geÃ¯mplementeerd worden op dezelfde manier als het drag & droppen. Het enige wat hier wel vereist
 voor is is JavaScript.
 
