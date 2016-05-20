@@ -23,3 +23,11 @@ Een oplossing die ik hier zelf voor heb bedacht is het clicken van een element e
 Wanneer juist uitgevoerd kan dit dynamisch geïmplementeerd worden op dezelfde manier als het drag & droppen. Het enige wat hier wel vereist
 voor is is JavaScript.
 
+Verder heb ik de accessibility onderzocht van drag and drop. Eerst heb ik gekeken hoe ik de events kon starten, wat best te doen is met wat javascript echter is het selecteren van een drop target en het dan daadwerkelijk droppen wel vrij tricky. Hier is echter al iets op bedacht en dat is het "copy pasten" van de elementen zoals je gewend bent met bijvoorbeeld files, echter is dit nog niet gesupport in alle browsers. 
+
+http://html5doctor.com/accessibility-native-drag-and-drop/
+
+De roles ARIA-Grabbed en ARIA-Dropeffect zijn er voor screenreader gebruikers, deze moeten echter wel gebruikt worden wanneer het echt van toepassing is aangezien drag & drop voor heel veel doeleinden gebruikt kan worden en andere ARIA roles misschien duidelijker kunnen zijn.
+
+http://www.ssbbartgroup.com/blog/accessible-drag-and-drop-why-foolproof-scripting-is-critical-when-using-aria/
+
